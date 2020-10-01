@@ -6,7 +6,7 @@
   "license": "BSD-2-Clause",
   "main": "./index.js",
   "scripts": {
-    "start": "electron ./index.js",
+    "start": "electron ./index.js --debug",
     "dist": "electron-builder",
     "pack": "electron-builder --dir",
     "postinstall": "electron-builder install-app-deps"
@@ -40,6 +40,7 @@
     "electron-builder": "^22.8.1"
   },
   "dependencies": {
+    "command-line-args": "^5.1.1",
     "menubar": "^9.0.1",
     "node-fetch": "^2.6.1"
   }
